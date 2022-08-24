@@ -2,13 +2,13 @@ name: Integration Test
 on: [push]
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@master
+      - name: Checkout
+        uses: actions/checkout@master
+
       - name: Self test
         id: selftest
-
-        # Put your action repo here
         uses: ElliotLuque/check-number-of-current-mouredev-challenge@master
 
       - name: Check outputs
