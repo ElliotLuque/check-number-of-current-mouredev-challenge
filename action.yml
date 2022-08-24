@@ -1,4 +1,4 @@
-name: "Check last MoureDev challenge number"
+name: "Check number of MoureDev 2022 challenges"
 description: "Returns the number of the latest challenge"
 author: "Elliot Luque"
 outputs:
