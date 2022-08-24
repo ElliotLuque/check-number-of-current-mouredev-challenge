@@ -13,4 +13,4 @@ jobs:
 
       - name: Check outputs
         run: |
-          test "${{ steps.selftest.outputs.myOutput }}" == 34
+          test "${{ steps.selftest.outputs.challengeNumber }}" == 34
