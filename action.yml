@@ -1,13 +1,9 @@
-name: "Python Container Action Template"
-description: "Get started with Python Container actions"
-author: "Jacob Tomlinson"
-inputs:
-  myInput:
-    description: "Input to use"
-    default: "world"
+name: "Check last MoureDev challenge number"
+description: "Returns the number of the latest challenge"
+author: "Elliot Luque"
 outputs:
-  myOutput:
-    description: "Output from the action"
+  challengeNumber:
+    description: "Number of MoureDev challenges"
 runs:
   using: "docker"
   image: "Dockerfile"
