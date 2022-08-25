@@ -107,11 +107,11 @@ steps:
       color: ${{ steps.color.outputs.progressColor }}
 ```
 
-[status-badge]: https://img.shields.io/github/workflow/status/ElliotLuque/check-total-mouredev-challenges/Integration%20Test?label=Integration%20Test
-[example-challenge-badge]: https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/ElliotLuque/877b28319e86c7acc17d3116177a6a04/raw/badge.json
-
 ## Ver también
 
 - **[Repositorio personal de retos semanales 2022](https://github.com/ElliotLuque/retos-java-2022)**
 
 - **[DynamicBadges: Action usada para generar badges a partir de un JSON](https://github.com/marketplace/actions/dynamic-badges)**
+
+[status-badge]: https://img.shields.io/github/workflow/status/ElliotLuque/check-total-mouredev-challenges/Integration%20Test?label=Integration%20Test
+[example-challenge-badge]: https://img.shields.io/badge/challenges-15%2F35-yellow
