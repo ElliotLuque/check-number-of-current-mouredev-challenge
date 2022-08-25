@@ -1,8 +1,8 @@
-# Número de retos en total (MoureDev 2022)
+# Número total de retos (MoureDev 2022)
 
 ![status-badge]
 
-Esta pequeña action devuelve el número de **[retos de programación 2022 de MoureDev](https://retosdeprogramacion.com/semanales2022)**
+Esta pequeña action devuelve el número de **[retos de programación semanales 2022 de MoureDev](https://retosdeprogramacion.com/semanales2022)**
 
 Puedes recogerlo como output para la entrada de otra acción y, por ejemplo, calcular el número de retos que llevas completados.
 
@@ -19,7 +19,10 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
+    # Al darle una ID a la action puedes recoger su valor de salida con ${{ steps.ID_PASO.outputs.NOMBRE_OUTPUT }}
+    # El nombre del output debe ser el definido en la tabla de abajo
     - name: Check total challenges
+      id: outputTotal
       uses: ElliotLuque/check-total-mouredev-challenges@v1.1
 ```
 
@@ -100,3 +103,9 @@ steps:
 
 [status-badge]: https://img.shields.io/github/workflow/status/ElliotLuque/check-total-mouredev-challenges/Integration%20Test?label=Integration%20Test
 [example-challenge-badge]: https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/ElliotLuque/877b28319e86c7acc17d3116177a6a04/raw/badge.json
+
+## Ver también
+
+- **[Repositorio personal de retos semanales 2022](https://github.com/ElliotLuque/retos-java-2022)**
+
+- **[Action usada para generar badges a partir de un JSON](https://github.com/marketplace/actions/dynamic-badges)**
