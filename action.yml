@@ -1,6 +1,9 @@
 name: "Check number of MoureDev 2022 challenges"
 description: "Returns the number of the latest challenge"
 author: "Elliot Luque"
+branding:
+  icon: 'check'
+  color: 'blue'
 outputs:
   challengeNumber:
     description: "Number of MoureDev challenges"
