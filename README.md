@@ -21,7 +21,7 @@ jobs:
     - uses: actions/checkout@master
     
     - name: Check total
-      uses: ElliotLuque/check-total-mouredev-challenges@v1
+      uses: ElliotLuque/check-total-mouredev-challenges@v1.1
 ```
 
 ### Outputs
@@ -45,7 +45,7 @@ steps:
 
   - name: Count number of challenges
     id: total
-    uses: ElliotLuque/check-total-mouredev-challenges@v1
+    uses: ElliotLuque/check-total-mouredev-challenges@v1.1
 
   - name: Calculate remaining
     run: echo "${{ steps.total.outputs.totalChallenges }} - ${{ steps.done.outputs.doneChallenges }}"
