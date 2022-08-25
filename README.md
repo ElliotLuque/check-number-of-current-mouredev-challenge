@@ -1,11 +1,11 @@
-# Número del reto de la semana (MoureDev 2022)
+# Número de retos en total (MoureDev 2022)
 
 
 [![Actions Status](https://github.com/jacobtomlinson/python-container-action/workflows/Integration%20Test/badge.svg)](https://github.com/jacobtomlinson/python-container-action/actions)
 
-Esta pequeña acción devuelve el número del reto de la semana actual de los **[retos de programación de MoureDev](https://retosdeprogramacion.com/semanales2022)**
+Esta pequeña acción devuelve el número de retos de**[retos de programación de MoureDev](https://retosdeprogramacion.com/semanales2022)**
 
-Puedes recogerlo como output para la entrada de otra acción y, por ejemplo, calcular el número de retos que llevas completados con los totales
+Puedes recogerlo como output para la entrada de otra acción y, por ejemplo, calcular el número de retos que llevas completados
 
 ## Uso
 
@@ -20,15 +20,15 @@ jobs:
     steps:
     - uses: actions/checkout@master
     
-    - name: Run action
-      uses: ElliotLuque/check-number-of-current-mouredev-challenge@v1
+    - name: Check total
+      uses: ElliotLuque/check-total-mouredev-challenges@v1
 ```
 
 ### Outputs
 
 | Output                                             | Descripción                                        |
 |------------------------------------------------------|-----------------------------------------------|
-| `challengeNumber`  | Número del reto de la semana actual    |
+| `totalChallenges`  | Número de retos en total    |
 
 ## Ejemplos
 
@@ -45,9 +45,9 @@ steps:
 
   - name: Count number of challenges
     id: total
-    uses: ElliotLuque/check-number-of-current-mouredev-challenge@v1
+    uses: ElliotLuque/check-total-mouredev-challenges@v1
 
   - name: Calculate remaining
-    run: echo "${{ steps.done.outputs.challengeNumber }} - ${{ steps.total.outputs.doneChallenges }}"
+    run: echo "${{ steps.total.outputs.totalChallenges }} - ${{ steps.done.outputs.doneChallenges }}"
       
 ```

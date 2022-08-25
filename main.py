@@ -15,7 +15,7 @@ def main():
 
     challengeNumber = challenge[pos1: pos2]
 
-    print(f"::set-output name=challengeNumber::{challengeNumber}")
+    print(f"::set-output name=totalChallenges::{int(challengeNumber) + 1}")
 
 if __name__ == "__main__":
     main()

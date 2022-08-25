@@ -1,11 +1,11 @@
 name: "Check number of MoureDev 2022 challenges"
-description: "Returns the number of the latest challenge"
+description: "Returns the number of challenges"
 author: "Elliot Luque"
 branding:
   icon: 'check'
   color: 'blue'
 outputs:
-  challengeNumber:
+  totalChallenges:
     description: "Number of MoureDev challenges"
 runs:
   using: "docker"
