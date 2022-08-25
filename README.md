@@ -3,7 +3,7 @@
 
 [![Actions Status](https://github.com/jacobtomlinson/python-container-action/workflows/Integration%20Test/badge.svg)](https://github.com/jacobtomlinson/python-container-action/actions)
 
-Esta pequeña acción devuelve el número de retos de**[retos de programación de MoureDev](https://retosdeprogramacion.com/semanales2022)**
+Esta pequeña acción devuelve el número de retos de **[retos de programación de MoureDev](https://retosdeprogramacion.com/semanales2022)**
 
 Puedes recogerlo como output para la entrada de otra acción y, por ejemplo, calcular el número de retos que llevas completados
 
