@@ -51,7 +51,7 @@ steps:
     uses: ElliotLuque/check-total-mouredev-challenges@v1.1
 
   - name: Calculate remaining
-    run: echo (( ${{ steps.total.outputs.totalChallenges }} - $FINISHED_CHALLENGES)) 
+    run: echo $(( {{ steps.total.outputs.totalChallenges }} - FINISHED_CHALLENGES)) 
 ```
 
 #### 2. Para mi repositorio personal, he usado esta action junto a **[DynamicBadges](https://github.com/marketplace/actions/dynamic-badges)** para crear una badge con el progreso de mis retos (cambia de color mediante avances).
