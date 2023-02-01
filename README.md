@@ -113,5 +113,5 @@ steps:
 
 - **[DynamicBadges: Action usada para generar badges a partir de un JSON](https://github.com/marketplace/actions/dynamic-badges)**
 
-[status-badge]: https://img.shields.io/github/workflow/status/ElliotLuque/check-total-mouredev-challenges/Integration%20Test?label=Integration%20Test
+[status-badge]: https://github.com/ElliotLuque/check-total-mouredev-challenges/actions/workflows/integration.yml/badge.svg
 [example-challenge-badge]: https://img.shields.io/badge/challenges-15%2F35-yellow
